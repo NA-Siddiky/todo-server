@@ -16,7 +16,7 @@ const taskSchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
-    userEmail: {
+    email: {
       type: String,
       required: true,
       trim: true,
