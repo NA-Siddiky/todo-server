@@ -1,0 +1,11 @@
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# dependencies
+/node_modules
+
+# misc
+.env
+/config
