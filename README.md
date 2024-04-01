@@ -1,39 +1,56 @@
 # ToDo Application Backend Server
 
-This project serves as the backend server for a ToDo application, providing APIs to manage tasks in a ToDo list. It's built using Node.js with Express and MongoDB, and it's designed to be easily deployable to AWS.
+This project serves as the backend server for a ToDo application, providing APIs to manage tasks within a ToDo list. It's built using Node.js, Express, and MongoDB, and is designed for straightforward deployment to AWS.
+
+## Getting Started
 
 ### Prerequisites
+
+Ensure you have the following installed:
 
 - Node.js
 - MongoDB
 
-### Installing
+### Installation
+
+Follow these steps to get the project up and running:
 
 1. Clone the repository:
-   git clone [<repository-url>](https://github.com/NA-Siddiky/todo-server)
+   git clone https://github.com/NA-Siddiky/todo-server
 
-2. Navigate to the project directory:
+2. Change to the project directory:
    cd todo-server
 
-3. Install dependencies:
+3. Install the project dependencies:
    npm install
 
 ### Running the Application
 
-To start the server in development mode, use the following command:
+To run the server in development mode, execute one of the following commands:
 
 npm start
+
 or
+
 npm run dev
 
-By default, the server runs on port 5010. If needed, you can change the port by setting the `PORT` environment variable.
+The server defaults to running on port 5010. If you need to change the port, set the `PORT` environment variable accordingly.
+
+## Routes
+
+- Create Task: `POST /tasks`
+- Read Tasks: `GET /tasks/<email>`
+- Update Task: `PATCH /tasks/<id>`
+- Delete Task: `DELETE /tasks/<id>`
 
 ## Deployment
+AWS Link: http://43.201.65.252
+For AWS deployment, the `deploy/aws` branch contains all necessary configurations. Refer to the AWS deployment guide for detailed steps.
 
-The `deploy/aws` branch contains the necessary configurations for deploying the application to AWS. Follow the AWS deployment guide for detailed instructions.
+## Technologies Used
 
-## Built With
-
-- [Node.js](https://nodejs.org/) - The runtime environment
-- [Express](https://expressjs.com/) - The web framework
-- [MongoDB](https://www.mongodb.com/) - The database
+- Node.js - Runtime environment
+- Express - Web framework
+- MongoDB - Database
+- AWS EC2
+- PM2 for process management
